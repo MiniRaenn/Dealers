@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+header .container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  font-size: 22px;
+  line-height: 37px;
+  font-weight: 900;
+}
+header .container nav ul {
+  display: flex;
+  gap: 30px;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li .blue {
+  color: #207DFF;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .container nav ul li .blue i {
+  font-size: 10px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .container .icons {
+  display: flex;
+  gap: 25px;
+}
+header .container .icons i {
+  cursor: pointer;
+}
+header .container .icons .shoppng {
+  position: relative;
+}
+header .container .icons .shoppng a {
+  text-decoration: none;
+  color: black;
+}
+header .container .icons .shoppng a i {
+  cursor: pointer;
+}
+header .container .icons .shoppng a p {
+  font-size: 15px;
+  position: absolute;
+  background-color: #207DFF;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  bottom: 10px;
+  left: 10px;
+}
+
+#madewell {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#madewell .container {
+  width: 75%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#madewell .container .texts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+#madewell .container .texts h1 {
+  font-size: 64px;
+  line-height: 77px;
+  font-weight: 900;
+}
+#madewell .container .texts span {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+#madewell .container .texts p {
+  font-size: 32px;
+  line-height: 54px;
+  font-weight: 400;
+  display: flex;
+  gap: 15px;
+}
+#madewell .container .texts p span {
+  font-size: 32px;
+  line-height: 54px;
+  font-weight: 300;
+  color: gray;
+  text-decoration: line-through;
+}
+#madewell .container .texts .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#madewell .container .texts .btns .left {
+  background-color: white;
+  border: 1px solid #207DFF;
+  padding: 10px 20px;
+  color: #207DFF;
+  transition: 0.5s ease;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#madewell .container .texts .btns .left:hover {
+  background-color: #207DFF;
+  color: white;
+  transition: 0.5s ease;
+}
+#madewell .container .texts .btns .right {
+  background-color: #207DFF;
+  border: 1px solid #207DFF;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.5s ease;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#madewell .container .texts .btns .right:hover {
+  background-color: #0068F9;
+  transition: 0.5s ease;
+}
+#madewell .container .image {
+  width: 50%;
+  min-height: 600px;
+}
+#madewell .container .image img {
+  width: 100%;
+  min-height: 600px;
+}
+
+#shop {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+}
+#shop .cards {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+#shop .cards .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#shop .cards .card img {
+  width: 100%;
+  height: 350px;
+}
+#shop .cards .card h1 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+#shop .cards .card span {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+}
+#shop .cards .card p {
+  display: flex;
+  gap: 25px;
+  font-size: 21px;
+  line-height: 41px;
+  font-weight: 400;
+}
+#shop .cards .card p span {
+  font-size: 17px;
+  line-height: 41px;
+  font-weight: 400;
+  color: gray;
+}
+#shop .cards .card button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #207DFF;
+  padding: 10px 20px;
+  color: #207DFF;
+  transition: 0.5s ease;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#shop .cards .card button:hover {
+  background-color: #207DFF;
+  color: white;
+  transition: 0.5s ease;
+}
+
+#jacket {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+#jacket .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+#jacket .container .image {
+  width: 66%;
+}
+#jacket .container .image img {
+  width: 100%;
+}
+#jacket .container .text {
+  display: flex;
+  align-items: center;
+}
+#jacket .container .text .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#jacket .container .text .texts h1 {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+}
+#jacket .container .text .texts p {
+  font-size: 70px;
+  line-height: 84px;
+  font-weight: 900;
+}
+#jacket .container .text .texts button {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#jacket .container .text .texts button:hover {
+  background-color: #333333;
+  transition: 0.5s ease;
+}
+
+#collections {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+}
+#collections .container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#collections .container h1 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+}
+#collections .container .cardss {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+#collections .container .cardss .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#collections .container .cardss .card img {
+  width: 100%;
+  height: 300px;
+}
+#collections .container .cardss .card h1 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+#collections .container .cardss .card span {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+}
+#collections .container .cardss .card p {
+  display: flex;
+  gap: 25px;
+  font-size: 21px;
+  line-height: 41px;
+  font-weight: 400;
+}
+#collections .container .cardss .card p span {
+  font-size: 17px;
+  line-height: 41px;
+  font-weight: 400;
+  color: gray;
+}
+#collections .container .cardss .card button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #207DFF;
+  padding: 10px 20px;
+  color: #207DFF;
+  transition: 0.5s ease;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#collections .container .cardss .card button:hover {
+  background-color: #207DFF;
+  color: white;
+  transition: 0.5s ease;
+}
+
+#coat {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+#coat .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+#coat .container .image {
+  width: 66%;
+  min-height: 700px;
+  overflow: hidden;
+}
+#coat .container .image img {
+  width: 100%;
+  min-height: 700px;
+}
+#coat .container .text {
+  display: flex;
+  align-items: center;
+}
+#coat .container .text .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#coat .container .text .texts h1 {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+}
+#coat .container .text .texts p {
+  font-size: 70px;
+  line-height: 84px;
+  font-weight: 900;
+}
+#coat .container .text .texts p span {
+  color: rgb(30, 60, 112);
+}
+#coat .container .text .texts button {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#coat .container .text .texts button:hover {
+  background-color: #333333;
+  transition: 0.5s ease;
+}
+
+footer {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .container .content {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .container .content .texts {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container .content .texts h1 {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+  color: black;
+}
+footer .container .content .texts p {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+  color: gray;
+}
+footer .container .content .texts span {
+  font-size: 19px;
+  line-height: 33px;
+  font-weight: 300;
+}
+footer .container .content .texts .inpt {
+  width: 100%;
+  display: flex;
+}
+footer .container .content .texts .inpt input {
+  width: 70%;
+  border: 1px solid #207DFF;
+  outline: none;
+  padding: 15px;
+}
+footer .container .content .texts .inpt button {
+  width: 30%;
+  border: 1px solid #207DFF;
+  background-color: #207DFF;
+  cursor: pointer;
+  color: white;
+}
+footer .container .content .texts .inpt button:hover {
+  background-color: #0068F9;
+}
+footer .container .content .navs {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container .content .navs h1 {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+  color: black;
+}
+footer .container .content .navs nav {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+footer .container .content .navs nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .content .navs nav ul li {
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+footer .container .content .navs nav ul li:hover {
+  transform: scale(1.2);
+}
+footer .container .content .navs nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+footer .container .content .navs nav ul li a:hover {
+  color: #207DFF;
+}
+footer .container .content .contact {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container .content .contact h1 {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 500;
+  color: black;
+}
+footer .container .content .contact .loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .content .contact .loc h1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+footer .container .content .contact .loc a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+footer .container .content .contact .loc a:hover {
+  color: #207DFF;
+}
+footer .container .content .contact .loc i {
+  color: #207DFF;
+}
+footer .container h1 {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+  color: rgb(152, 152, 152);
+}
+footer .container h1 i {
+  color: gray;
+}
+footer .container h1 span {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #207DFF;
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  header nav {
+    display: none;
+  }
+  #madewell .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #shop .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #shop .cards .card {
+    width: 45%;
+  }
+  #jacket {
+    width: 100%;
+  }
+  #jacket .container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #jacket .container .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #jacket .container .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #collections .container .cardss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #collections .container .cardss .card {
+    width: 45%;
+  }
+  #coat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #coat .container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #coat .container .image {
+    display: none;
+  }
+  #coat .container .text .texts p {
+    font-size: 50px;
+    line-height: 84px;
+    font-weight: 900;
+  }
+  #coat .container .text .texts p span {
+    color: rgb(30, 60, 112);
+  }
+  footer .container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 660px) {
+  #shop .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #shop .cards .card {
+    width: 100%;
+  }
+  #collections .container .cardss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #collections .container .cardss .card {
+    width: 100%;
+  }
+}
